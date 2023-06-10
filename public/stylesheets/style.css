@@ -16,3 +16,7 @@ a {
 .data-element {
   margin-bottom: 10px;
 }
+
+.hidden {
+  display: none;
+}
