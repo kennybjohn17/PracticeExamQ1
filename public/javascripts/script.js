@@ -27,6 +27,7 @@ $(document).ready(() => {
 
 function search() {
   var search = document.getElementById('find').value.toLowerCase();
+  var container = document.getElementsByClassName('data-container');
   var names = document.getElementsByClassName('data-name');
   var description = document.getElementsByClassName('data-description');
   var sizes = document.getElementsByClassName('data-size');
@@ -48,6 +49,7 @@ function search() {
       label1[i].classList.remove('hidden');
       label2[i].classList.remove('hidden');
       label3[i].classList.remove('hidden');
+      container[i].classList.remove('hidden');
     } else {
       names[i].classList.add('hidden');
       description[i].classList.add('hidden');
@@ -57,6 +59,7 @@ function search() {
       label1[i].classList.add('hidden');
       label2[i].classList.add('hidden');
       label3[i].classList.add('hidden');
+      container[i].classList.remove('hidden');
     }
   }
 }
