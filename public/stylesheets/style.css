@@ -17,6 +17,14 @@ a {
   margin-bottom: 10px;
 }
 
+.data-price {
+  size: 20px;
+}
+
 .hidden {
   display: none;
+}
+
+label{
+  padding-right: 20px;
 }
