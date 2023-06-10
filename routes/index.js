@@ -1,6 +1,6 @@
 var express = require('express');
 const app = express();
-const mysql = require('mysql');;
+const mysql = require('mysql');
 
 /* GET home page. */
 app.get('/', function(req, res, next) {
@@ -8,5 +8,3 @@ app.get('/', function(req, res, next) {
 });
 
 
-
-module.exports = app;
