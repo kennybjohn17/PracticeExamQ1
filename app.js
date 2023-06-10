@@ -14,7 +14,7 @@ const connection = mysql.createConnection({
   });
 
   app.get('/data', (req, res) => {
-    const query = 'SELECT * FROM your_table';
+    const query = 'SELECT * FROM items';
     connection.query(query, (error, results) => {
       if (error) throw error;
       res.json(results);
