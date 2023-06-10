@@ -7,6 +7,7 @@ $(document).ready(() => {
         // Process the received JSON data
         data.forEach((element) => {
           // Create a new HTML element for each data item
+            const container = $('<div>').addClass('data-container');
           const newElement1 = $('<h1>').addClass('data-name').text(element.name);
           const newElement4 = $('<div>').addClass('data-brand').text(element.brand);
           const newElement2 = $('<p>').addClass('data-description').text(element.description);
@@ -17,7 +18,8 @@ $(document).ready(() => {
           const newElement5 = $('<div>').addClass('data-price').text(element.price);
 
           // Append the element to the output container
-          $('.output').append(newElement1,newElement4,newElement2,newElement3,newElement6,newElement7,newElement8,newElement5);
+          container.append(newElement1,newElement4,newElement2,newElement3,newElement6,newElement7,newElement8,newElement5);
+          $('.output').append(container);
         });
       }
     });

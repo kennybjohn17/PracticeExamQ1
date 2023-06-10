@@ -18,11 +18,19 @@ a {
 }
 
 .data-price {
-  size: 20px;
+  font-size: 20px;
 }
 
 .hidden {
   display: none;
+}
+
+.data-container {
+  width: 250px; float:left; height: 250px;; background:lightblue; margin:10px;
+}
+#find{
+  width: 30%;
+  height: 30px;
 }
 
 label{
