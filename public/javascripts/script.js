@@ -18,7 +18,7 @@ $(document).ready(() => {
           const newElement5 = $('<div>').addClass('data-price').text(element.price);
 
           // Append the element to the output container
-          container.append(newElement1,newElement4,newElement2,newElement3,newElement6,newElement7,newElement8,newElement5);
+          container.append(newElement1,newElement4,newElement2,newElement3,"Labels : ",newElement6,newElement7,newElement8,newElement5);
           $('.output').append(container);
         });
       }
@@ -59,7 +59,7 @@ function search() {
       label1[i].classList.add('hidden');
       label2[i].classList.add('hidden');
       label3[i].classList.add('hidden');
-      container[i].classList.remove('hidden');
+      container[i].classList.add('hidden');
     }
   }
 }
